@@ -1,0 +1,26 @@
+#coding=utf-8
+from distutils.core import setup
+# 库名 / 版本 / 描述 / 项目地址 / 作者 / 作者邮箱 / 协议 / 关键词 / 模块列表
+setup(name="joxaipu",
+      version="2.4",
+      description="aipu api",
+      url='http://www.linker.ren',
+      author="jonson",
+      author_email='jon_son_@outlook.com',
+      keywords='python',
+      py_modules=['jox_restful.Log',
+                    'jox_restful.Order',
+                    'jox_restful.Product',
+                    'jox_restful.User',
+                    'jox_restful.Menu',
+                    'jox_restful.Upload',
+                    'jox_api.AI',
+                    'jox_api.label_image',
+                    'jox_api.Order',
+                    'jox_api.Product',
+                    'jox_api.Redis',
+                    'jox_api.Menu',
+                    'jox_api.Mysql',
+                    'jox_api.Utils',
+                    'jox_api.User',
+                    'jox_config'])

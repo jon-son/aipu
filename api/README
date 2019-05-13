@@ -1,0 +1,6 @@
+构件库
+python setup.py build
+构建完后打包
+python setup.py sdist
+解压缩后进入文件夹安装
+python setup.py install

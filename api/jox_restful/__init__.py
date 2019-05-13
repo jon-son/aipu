@@ -1,0 +1,1 @@
+all=['Menu','Shop','Token','Upload']
