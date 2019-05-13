@@ -1,0 +1,22 @@
+/* pages/show/show.wxss */
+.photo{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 500rpx;
+}
+.photo-img{
+  height: 400rpx;
+  background-color: #ffffff;
+  border-radius: 10rpx;
+  box-shadow:#999999  0rpx 0rpx 10rpx ;
+}
+.mt10{
+  margin-top: 10rpx;
+}
+.ai-tetx{
+  font-size: 30rpx;
+  font-weight: 600;
+  margin-left: 5%;
+}

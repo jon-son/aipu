@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "jox-btn":"../../components/part/jox-btn/index",
+    "jox-bottom": "../../components/part/jox-bottom/index"
+  }
+}

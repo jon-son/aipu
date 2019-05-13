@@ -1,0 +1,20 @@
+<!--pages/myhealth/myhealth.wxml-->
+<view>
+  <van-collapse value="{{ activeNames }}" bind:change="onChange">
+    <van-collapse-item title="{{item.name}}" name="{{index+1}}" wx:for="{{health}}" wx:key="index">
+      <value>
+        <view class='list-box'>
+          <view wx:for="{{item.list}}" wx:for-index="listIndex" wx:key="listIndex" wx:for-item="listItem">
+            <text>{{listItem}}</text>
+          </view>
+        </view>
+        <view class='pu-box'>
+          <view wx:for="{{item.pu_list}}" wx:for-index="puIndex" wx:key="puIndex" wx:for-item="puItem" class='pu-item' data-id="{{puItem.id}}" bindtap='jump_to'>
+            <image class='pu-img' src='{{puItem.img}}' mode="aspectFill"></image>
+            <text class='pu-name'>{{puItem.name}}</text>
+          </view>
+        </view>
+      </value>
+    </van-collapse-item>
+  </van-collapse>
+</view>

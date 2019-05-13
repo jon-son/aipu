@@ -1,0 +1,6 @@
+<!--components/part/jox-footer/index.wxml-->
+<view class='jox-class'>
+  <view class='btn' bindtap='uploadPic'>
+    <image class='btn-icon' src='../../icon/add1.png'></image>
+  </view>
+</view>

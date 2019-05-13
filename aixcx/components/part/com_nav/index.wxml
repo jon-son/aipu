@@ -1,0 +1,31 @@
+<!--components/wx_nav/index.wxml-->
+<view class='jox-class'>
+  <slot name="home"></slot>
+  <slot name="health"></slot>
+  <slot name="store"></slot>
+  <slot name="mine"></slot>
+  <view class='wrapper'>
+    <view class='btn-box'>
+      <view class='btn {{show_btn?"btn1":""}}' bindtap='uploadPic'>
+        <image class='btn-icon' src='/img/add1.png'></image>
+      </view>
+      <view class='btn {{show_btn?"btn2":""}}'></view>
+      <view class='btn {{show_btn?"btn3":""}}'></view>
+    </view>
+    <view class='nav-wrap'>
+      <block wx:for='{{list}}' wx:key='index'>
+        <view class='nav-box' bindtap='navRouter' data-item='{{item}}'>
+          <block wx:if='{{index==2}}'>
+            <image class='nav-center' src='{{myUrl==item.url?item.nav_on:item.nav_off}}'></image>
+            <view class='nav-center-text'>{{item.text}}</view>
+          </block>
+          <block wx:else>
+            <image class='nav-icon' src='{{myUrl==item.url?item.nav_on:item.nav_off}}'></image>
+            <view class='nav-text {{myUrl==item.url?"nav-on":""}}'>{{item.text}}</view>
+          </block>
+        </view>
+      </block>
+    </view>
+  </view>
+
+</view>

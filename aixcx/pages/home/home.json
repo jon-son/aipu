@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "home": "../../components/pages/home/index",
+    "health": "../../components/pages/health/index",
+    "store": "../../components/pages/store/index",
+    "mine": "../../components/pages/mine/index"
+  }
+}

@@ -1,0 +1,35 @@
+/* pages/get_user/get_user.wxss */
+.show-top{
+  height: 400rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.inf-head-img{
+  overflow:hidden;
+  width: 164rpx;
+  height: 164rpx;
+  border-radius: 50%;
+  box-shadow: 0rpx 0rpx 5rpx #888888;
+}
+.name{
+  margin-top: 30rpx;
+}
+.text{
+  margin-left: 10%;
+  font-size: 35rpx;
+  line-height: 1.8;
+}
+.text-item{
+  display: flex;
+  flex-direction: column;
+  margin-left: 15%;
+  font-size: 30rpx;
+  color: #888888;
+  line-height: 1.5;
+}
+.button-get{
+  width: 80%;
+  margin-top: 80rpx;
+}

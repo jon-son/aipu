@@ -1,0 +1,25 @@
+<!--components/pages/store/index.wxml-->
+<view class="jox-class">
+  <view class='search'>
+    <view class='search-input'>
+      <text class='jox-icon-search'></text>
+      <text>搜索商品</text>
+    </view>
+  </view>
+  <view class='list'  style="height:calc(100vh - 200rpx)">
+
+    <view class='store-nav-list'>
+      <view class='store-nav-list-item {{index==nav_id?"choose-store-nav":""}}' wx:for="{{nav_list}}" wx:key="index" 
+      data-id='{{index}}' bindtap='change_nav'>
+        <text>{{item.name}}</text>
+      </view>
+    </view>
+    
+    <view class='product-list'>
+      <view class='product-list-item' wx:for="{{product_list[nav_id]}}" wx:key="index" data-id='{{item.id}}' bindtap='jump_to'>
+        <image class='product-img' src="{{item.image}}"></image>
+        <text class='product-name'>{{item.name}}</text>
+      </view>
+    </view>
+  </view>
+</view>

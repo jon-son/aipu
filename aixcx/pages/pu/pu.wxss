@@ -1,0 +1,100 @@
+/* pages/pu/pu.wxss */
+
+page {
+  background-color: #fff;
+}
+
+.pu-img {
+  width: 100%;
+  height: 350rpx;
+}
+
+.pu-name {
+  padding: 10rpx 30rpx;
+  font-weight: 700;
+  font-size: 35rpx;
+}
+
+.pu-title {
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  height: 60rpx;
+  display: flex;
+  align-items: center;
+}
+
+.pu-title-radius {
+  width: 30rpx;
+  height: 30rpx;
+  border-radius: 50%;
+  margin-left: 5%;
+  border: 10rpx solid #ff6767;
+}
+
+.pu-title-text {
+  margin-left: 10rpx;
+  color: #ff6767;
+}
+
+.pu-title-icon {
+  position: absolute;
+  right: 20rpx;
+  padding: 10rpx;
+}
+
+.pu-item-box {
+  display: flex;
+  flex-direction: column;
+  padding: 30rpx 0rpx;
+}
+
+.pu-item-name {
+  margin-left: 10%;
+  position: absolute;
+  margin-top: -30rpx;
+  padding: 10rpx;
+  background-color: #fff;
+}
+
+.pu-item-list {
+  border: 1rpx solid #ddd;
+  border-radius: 10rpx;
+  width: 90%;
+  margin-left: 5%;
+  padding: 40rpx 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pu-item-list-text {
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20rpx 0rpx;
+}
+
+.pu-step-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.pu-step-box-item{
+  width: 90%;
+  display: flex;
+  padding: 20rpx 0;
+  align-items: center;
+}
+
+.step-left {
+  width: 300rpx;
+}
+
+.step-right {
+  width: 355rpx;
+  padding: 10rpx;
+  display: flex;
+  flex-direction: column;
+
+}

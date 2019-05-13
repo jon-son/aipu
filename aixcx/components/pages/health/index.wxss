@@ -1,0 +1,86 @@
+/* components/pages/health/index.wxss */
+
+.health-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 80rpx;
+}
+
+.info-box {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  padding: 40rpx 20rpx;
+}
+.info-name{
+  margin-left: 10rpx;
+}
+.info-list{
+  padding: 10rpx;
+}
+.info-item{
+  padding: 10rpx;
+  border: 1rpx solid #ddd;
+  color: #999;
+  border-radius: 10rpx;
+  margin-right: 20rpx;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+}
+.close{
+  padding: 5rpx 10rpx;
+}
+.input-box {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding:  0rpx 20rpx;
+}
+
+.input{
+  width: 75%;
+}
+.build{
+  padding:40rpx 20rpx;
+  width: 750rpx;
+}
+.show-box{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 20rpx;
+}
+.show-name{
+  font-size: 30rpx;
+  font-weight: 600;
+  padding: 10rpx;
+}
+.show-item{
+  display: flex;
+  flex-direction:column;
+  background-color: #ffffff;
+  border-radius: 10rpx;
+  margin-bottom: 20rpx;
+}
+.pu-show{
+  display: flex;
+  align-items: center;
+  padding: 20rpx;
+}
+.pu-img{
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 10rpx;
+  
+}
+.pu-name{
+  margin-left: 10rpx;
+}
+.pu-watch{
+  position: absolute;
+  right: 40rpx;
+  color: #999;
+}

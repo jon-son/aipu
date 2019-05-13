@@ -1,0 +1,19 @@
+/* components/part/jox-footer/index.wxss */
+
+.btn {
+  position: fixed;
+  bottom: 30rpx;
+  right: 30rpx;
+  height: 90rpx;
+  width: 90rpx;
+  border-radius: 50%;
+  background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.btn-icon{
+    height: 50rpx;
+  width: 50rpx;
+}

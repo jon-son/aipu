@@ -1,0 +1,51 @@
+<!--components/pages/health/index.wxml-->
+<view class='health-box'>
+  <view class='info-box'>
+    <view class='info-list' wx:for="{{info_list}}" wx:key>
+      <view class='info-item'>
+        <text class='info-name'>{{item}}</text>
+        <text class='jox-icon-backdelete close' data-id="{{index}}" bindtap='closeInfo'></text>
+      </view>
+    </view>
+  </view>
+  <view class='input-box'>
+    <van-field value="{{ value }}" placeholder="请输入今天想吃的主食" border="{{ false }}" bind:change="onChange" class="input" />
+    <van-button type="info" bindtap='addInfo'>添加记录</van-button>
+  </view>
+  <view class='build'>
+    <van-button type="info" size="large" bindtap='buildInfo'>生成推荐搭配饮食</van-button>
+  </view>
+  <view class='show-box' wx:if="{{show}}">
+    <view class='show-item'>
+      <text class='show-name'>早餐</text>
+      <view class='pu-show' data-id="{{show_list[0].id}}" bindtap='jump_to'>
+        <image src='{{show_list[0].img}}' class='pu-img' mode='aspectFill'></image>
+        <text class='pu-name'>{{show_list[0].name}}</text>
+        <view class='pu-watch'>
+          <text class="jox-icon-attentionfill "></text> {{show_list[0].wacth}}
+        </view>
+      </view>
+    </view>
+    <view class='show-item' >
+      <text class='show-name'>午餐</text>
+      <view class='pu-show'  data-id="{{show_list[1].id}}" bindtap='jump_to'>
+        <image src='{{show_list[1].img}}' class='pu-img' mode='aspectFill'></image>
+        <text class='pu-name'>{{show_list[1].name}}</text>
+        <view class='pu-watch'>
+          <text class="jox-icon-attentionfill "></text> {{show_list[1].wacth}}
+        </view>
+      </view>
+    </view>
+        <view class='show-item'>
+      <text class='show-name'>晚餐</text>
+      <view class='pu-show'  data-id="{{show_list[2].id}}" bindtap='jump_to'>
+        <image src='{{show_list[2].img}}' class='pu-img' mode='aspectFill'></image>
+        <text class='pu-name'>{{show_list[2].name}}</text>
+        <view class='pu-watch'>
+          <text class="jox-icon-attentionfill "></text> {{show_list[2].wacth}}
+        </view>
+      </view>
+    </view>
+  </view>
+
+</view>

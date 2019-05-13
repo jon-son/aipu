@@ -1,0 +1,71 @@
+<!--index.wxml-->
+
+
+<swiper class="screen-swiper round-dot" indicator-dots="true" circular="true" autoplay="true" interval="5000" duration="500">
+  <swiper-item wx:for="{{4}}" wx:key>
+    <image src="http://img4.imgtn.bdimg.com/it/u=623512469,3687656708&fm=214&gp=0.jpg" mode='aspectFill'></image>
+  </swiper-item>
+</swiper>
+
+<view class="VerticalBox" style='margin-top:10rpx'>
+  <scroll-view class="VerticalMain" scroll-y scroll-with-animation style="height:calc(100vh - 485rpx)" scroll-into-view="main-id-{{TabCur}}" bindscroll="VerticalMain">
+
+    <view class="cu-card case {{isCard?'no-card':''}}">
+      <view wx:for="{{2}}" wx:key class="cu-item shadow">
+        <view class='image'>
+          <image src="http://img.redocn.com/sheying/20140804/huoguocaitianyumi_2841241.jpg" mode="widthFix"></image>
+          <view class="cu-tag bg-blue">菜谱</view>
+          <view class='cu-bar bg-shadeBottom'>震惊，青菜竟然可以这样做！</view>
+        </view>
+        <view class="cu-list menu menu-avatar">
+          <view class="cu-item">
+            <view class="cu-avatar round lg" style="background-image:url(https://wx.qlogo.cn/mmopen/vi_32/fF7icBE5ZFnvt5FG1wk6bSfXEwEuy2jbhql7HwBIUzhjdLricTJPpPrP0ZzCrRkR1ChWMSt2SicREibs3ISkmPdCzQ/132);"></view>
+            <view class='content flex-sub'>
+              <view class='text-grey'>可儿</view>
+              <view class='text-gray text-sm flex justify-between'>
+                一天前
+                <view class="text-gray text-sm">
+                  <text class="icon-attentionfill"></text> 10
+                  <text class="icon-appreciatefill"></text> 20
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+</view>
+
+<view class='btn-box'>
+
+  <view class='btn {{show_btn?"btn1":""}}' bindtap='uploadPic'>
+    <image class='btn-icon' src='/img/add1.png'></image>
+  </view>
+  <view class='btn {{show_btn?"btn2":""}}'></view>
+  <view class='btn {{show_btn?"btn3":""}}'></view>
+</view>
+<view class="cu-bar tabbar bg-white">
+  <view class="action text-green">
+    <view class='icon-homefill'></view> 首页
+  </view>
+  <view class="action text-gray">
+    <view class='icon-similar'></view> 健康
+  </view>
+  <view class="action text-gray add-action">
+    <button class='cu-btn icon-add bg-green shadow' bindtap="showBtn"></button>
+    AI-PU
+  </view>
+  <view class="action text-gray">
+    <view class='icon-cart'>
+      <view class='cu-tag badge'>99</view>
+    </view>
+    商城
+  </view>
+  <view class="action text-gray">
+    <view class='icon-my'>
+      <view class='cu-tag badge'></view>
+    </view>
+    我的
+  </view>
+</view>

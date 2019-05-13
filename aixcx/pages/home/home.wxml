@@ -1,0 +1,39 @@
+<!--pages/home/home.wxml-->
+<view class='jox-class'>
+  <home name="home" wx:if="{{nav==0}}"></home>
+  <health name="health" wx:if="{{nav==1}}"></health>
+  <store name="store" wx:if="{{nav==3}}"></store>
+  <mine name="mine" wx:if="{{nav==4}}"></mine>
+
+  <view class='wrapper'>
+    <view class='btn-box'>
+      <view class='btn {{show_btn?"btn1":""}}' bindtap='uploadPic'>
+        <!-- <image class='btn-icon' src='/img/add1.png'></image> -->
+        <text class='jox-icon-pic btn-icon'></text>
+      </view>
+      <view class='btn {{show_btn?"btn2":""}}' bindtap='uppu'>
+        <text class='jox-icon-write btn-icon'></text>
+      </view>
+      <view class='btn {{show_btn?"btn3":""}}' bindtap='uploadPic2'>
+        <text class='jox-icon-camera btn-icon'></text>
+      </view>
+    </view>
+
+    <view class='nav-wrap'>
+      <block wx:for='{{list}}' wx:key='index'>
+        <view class='nav-box' bindtap='navRouter' data-id='{{index}}'>
+          <block wx:if='{{index==2}}'>
+            <image class='nav-center' src='/img/nav-center.png'></image>
+            <view class='nav-center-text'>{{item.text}}</view>
+          </block>
+          <block wx:else>
+            <!-- <image class='nav-icon' src='{{nav==index?item.nav_on:item.nav_off}}'></image> -->
+            <text class='{{nav==index?item.nav_on:item.nav_off}} nav-icon lg text-gray'></text>
+            <view class='nav-text {{nav==index?"nav-on":""}}'>{{item.text}}</view>
+          </block>
+        </view>
+      </block>
+    </view>
+  </view>
+
+</view>

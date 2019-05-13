@@ -1,0 +1,11 @@
+<!--pages/show/show.wxml-->
+<view class='photo'>
+  <image class='photo-img' src='{{photo}}' mode='aspectFit' ></image>
+</view>
+
+<text class='ai-tetx'>您可能要找的是：</text>
+<view class="cu-bar bg-white solid-bottom mt10" wx:for="{{list}}" wx:key="index" data-id='{{item.id}}' bindtap='jump_to'>
+  <view class='action'>
+    <text class='icon-titles text-orange '></text> {{item.name}} : {{item.results}}% <text class="icon-appreciatefill text-red" wx:if="{{index==0}}"></text>
+  </view>
+</view>

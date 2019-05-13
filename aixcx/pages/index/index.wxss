@@ -1,0 +1,79 @@
+/**index.wxss**/
+
+.VerticalNav.nav {
+  width: 200rpx;
+  white-space: initial;
+}
+
+.VerticalNav.nav .cu-item {
+  width: 100%;
+  text-align: center;
+  background-color: #fff;
+  margin: 0;
+  border: none;
+  height: 50px;
+  position: relative;
+}
+
+.VerticalNav.nav .cu-item.cur {
+  background-color: #f1f1f1;
+}
+
+.VerticalNav.nav .cu-item.cur::after {
+  content: "";
+  width: 8rpx;
+  height: 30rpx;
+  border-radius: 10rpx 0 0 10rpx;
+  position: absolute;
+  background-color: currentColor;
+  top: 0;
+  right: 0rpx;
+  bottom: 0;
+  margin: auto;
+}
+
+.VerticalBox {
+  display: flex;
+}
+
+.VerticalMain {
+  background-color: #f1f1f1;
+}
+
+.btn-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.btn {
+  position: absolute;
+  width: 70rpx;
+  height: 70rpx;
+  border-radius: 50%;
+  background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+  display: flex;
+  flex-direction: row;
+    transition: 0.5s;
+  align-items: center;
+  justify-content: center;
+}
+.btn-icon{
+    height: 35rpx;
+  width: 35rpx;
+}
+
+
+.btn1 {
+  transform: translate(-90rpx, -50rpx);
+}
+
+.btn2 {
+  transform: translate(0rpx, -90rpx);
+}
+
+.btn3 {
+  transform: translate(90rpx, -50rpx);
+}

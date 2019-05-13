@@ -1,0 +1,24 @@
+<!--components/pages/mine/index.wxml-->
+<!-- <text>components/pages/mine/index.wxml</text> -->
+<view class='jox-class'>
+  <view class='top'>
+    <open-data class="head-img" type="userAvatarUrl"></open-data>
+    <open-data class="nickname" type="userNickName"></open-data>
+  </view>
+  <view class='nav'>
+    <block wx:for="{{nav}}" wx:key="index">
+      <view class='nav-item'  data-id='{{index+4}}' bindtap='jump_to'>
+        <text class='{{item.icon}} nav-icon'></text>
+        <text>{{item.name}}</text>
+      </view>
+    </block>
+  </view>
+  <view class='list' >
+    <view class='list-item' wx:for="{{list}}" wx:key="index" data-id='{{index}}' bindtap='jump_to'>
+      <text class='list-icon {{item.icon}} '></text>
+      <text class='list-name'>{{item.name}}</text>
+      <text class='list-next icon-right'></text>
+    </view>
+  </view>
+
+</view>

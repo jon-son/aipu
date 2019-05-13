@@ -1,0 +1,22 @@
+/* pages/myai/myai.wxss */
+.title-img{
+  width: 150rpx;
+}
+.pu-box{
+  margin-top: 10rpx;
+  display: flex;
+  flex-direction: column;
+}
+.pu-item{
+  display: flex;
+  align-items: center;
+ padding: 10rpx 20rpx;
+}
+.pu-img{
+  width: 70rpx;
+  height:70rpx;
+  border-radius: 10rpx;
+}
+.pu-name{
+  margin-left: 20rpx;
+}

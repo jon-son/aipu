@@ -1,0 +1,13 @@
+<!--pages/get_user/get_user.wxml-->
+<view class='show-top'>
+  <view  class='inf-head-img' > 
+    <open-data type="userAvatarUrl" lang="zh_CN"></open-data>
+  </view>
+  
+  <open-data class="name" type="userNickName" class="name"></open-data>
+</view>
+<text class='text'>登录后AI-PU平台将获取一些权限</text>
+<view  class='text-item'>
+  <text>·获取你的公开信息(昵称、头像等)</text>
+</view>
+<button class='button-get' type='primary' open-type='getUserInfo'  bindgetuserinfo="bindGetUserInfo">微信登录</button>

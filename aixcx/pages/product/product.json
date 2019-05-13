@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "van-goods-action": "../../components/jox-vant/goods-action/index",
+    "van-goods-action-icon": "../../components/jox-vant/goods-action-icon/index",
+    "van-goods-action-button": "../../components/jox-vant/goods-action-button/index"
+  }
+}

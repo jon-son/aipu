@@ -1,0 +1,10 @@
+<!--pages/mypu/mypu.wxml-->
+<view class='pu-box'>
+  <view class='pu-list' wx:for="{{menu_list}}" wx:key="index">
+  <view class='pu-item' data-id='{{item.id}}' bindtap='jump_to'>
+      <image class='pu-img' src='{{item.photo}}' mode='aspectFill'></image>
+    <text class='pu-name'>{{item.title}}</text>
+  </view>
+
+  </view>
+</view>

@@ -1,0 +1,70 @@
+<!--pages/uppu/uppu.wxml-->
+<view>
+  <van-field value="{{ value0 }}" placeholder="请输入菜名" border="{{ true }}" data-type="0" bind:change="onChange" class="input" />
+</view>
+<view class='upimg1'>
+  <text class='uptext'>上传菜品封面</text>
+  <image class='img1' src='{{img1!=""?img1:"/img/add1.png"}}' mode="aspectFill" data-type='1' bindtap='choosePic'></image>
+</view>
+
+
+<view class='info-box'>
+  <view class='info-list' wx:for="{{info_list1}}" wx:key>
+    <view class='info-item'>
+      <text class='info-name'>{{item}}</text>
+      <text class='jox-icon-backdelete close' data-id="{{index}}" data-type="1" bindtap='closeInfo'></text>
+    </view>
+  </view>
+</view>
+<view class='input-box'>
+  <van-field value="{{ value1 }}" placeholder="请输入主料" border="{{ false }}" data-type="1" bind:change="onChange" class="input" />
+  <van-button type="info" data-type="1" bindtap='addInfo'>添加主料</van-button>
+</view>
+
+<view class='info-box'>
+  <view class='info-list' wx:for="{{info_list2}}" wx:key>
+    <view class='info-item'>
+      <text class='info-name'>{{item}}</text>
+      <text class='jox-icon-backdelete close' data-id="{{index}}" data-type="2" bindtap='closeInfo'></text>
+    </view>
+  </view>
+</view>
+<view class='input-box'>
+  <van-field value="{{ value2 }}" placeholder="请输入辅料" border="{{ false }}" data-type="2" bind:change="onChange" class="input" />
+  <van-button type="info" data-type="2" bindtap='addInfo'>添加辅料</van-button>
+</view>
+
+<view class='info-box'>
+  <view class='info-list' wx:for="{{info_list3}}" wx:key>
+    <view class='info-item'>
+      <text class='info-name'>{{item}}</text>
+      <text class='jox-icon-backdelete close' data-id="{{index}}" data-type="3" bindtap='closeInfo'></text>
+    </view>
+  </view>
+</view>
+<view class='input-box'>
+  <van-field value="{{ value3 }}" placeholder="请输入配料" border="{{ false }}" data-type="3" bind:change="onChange" class="input" />
+  <van-button type="info" data-type="3" bindtap='addInfo'>添加配料</van-button>
+</view>
+
+<view class='step-box'>
+  <block wx:for="{{step}}" wx:key="index">
+    <view>
+      <van-field value="{{ item.content }}" placeholder="请输入步骤描述" border="{{ true }}" data-id='{{index}}' data-type="4" bind:change="onChange" class="input" />
+    </view>
+    <view class='upimg1'>
+      <text class='uptext'>上传步骤图</text>
+      <image class='img1' src='{{item.img !=""?item.img:"/img/add1.png"}}' mode="aspectFill" data-id='{{index}}' data-type='2' bindtap='choosePic'></image>
+    </view>
+  </block>
+
+
+
+  <view class='add-step-box'>
+    <view class='add-step' bindtap='addStep'>
+      <text>添加步骤</text>
+    </view>
+  </view>
+</view>
+
+<van-button class='add-menu' size="large" type="info" bindtap='addMenu'>上传菜谱</van-button>

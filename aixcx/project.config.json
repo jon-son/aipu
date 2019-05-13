@@ -1,0 +1,101 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"autoAudits": false
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.6.1",
+	"appid": "wxddff35e6c6705918",
+	"projectname": "aifood",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 7,
+			"list": [
+				{
+					"id": -1,
+					"name": "pu",
+					"pathName": "pages/pu/pu",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "uppu",
+					"pathName": "pages/uppu/uppu",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "car",
+					"pathName": "pages/car/car",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "order",
+					"pathName": "pages/order/order",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "mypu",
+					"pathName": "pages/mypu/mypu",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "myhealth",
+					"pathName": "pages/myhealth/myhealth",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "myai",
+					"pathName": "pages/myai/myai",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 7,
+					"name": "product",
+					"pathName": "pages/product/product",
+					"query": "id=1",
+					"scene": null
+				}
+			]
+		}
+	}
+}

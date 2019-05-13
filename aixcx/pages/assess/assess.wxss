@@ -1,0 +1,33 @@
+/* pages/order/order.wxss */
+
+.order-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30rpx;
+}
+
+.order-item {
+  width: 90%;
+  border-radius: 15rpx;
+  background-color: #fafafa;
+  margin-top: 20rpx;
+}
+
+.item-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1rpx solid #ddd;
+  padding: 20rpx 20rpx;
+  font-size: 26rpx;
+}
+
+
+.item-bottom {
+  display: flex;
+  justify-content: flex-end;
+  border-top: 1rpx solid #ddd;
+  padding: 20rpx 30rpx;
+  font-size: 26rpx;
+}

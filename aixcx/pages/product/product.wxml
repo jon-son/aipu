@@ -1,0 +1,25 @@
+<!--pages/product/product.wxml-->
+<view class='swiper'>
+  <image src="{{product_info.image}}" class="slide-image" mode="aspectFill" />
+</view>
+<view class='pro-box'>
+  <view class='pro-price'>
+     ￥{{product_info.price}}
+  </view>
+  <view class='pro-name-box'>
+    <text class='pro-name'>{{product_info.name}}</text>
+    <text class='pro-msg'>{{product_info.msg}}</text>
+  </view>
+  <view class='pro-bottom'>
+    <text>运费：包邮</text>
+    <text>库存：{{product_info.stock}}</text>
+    <text>销量：{{product_info.sales}}</text>
+  </view>
+</view>
+
+<van-goods-action>
+  <van-goods-action-icon icon="chat-o" text="客服" />
+  <van-goods-action-icon icon="cart-o" text="购物车" info="{{product_info.car_num}}" bindtap='toCar' />
+  <van-goods-action-button text="加入购物车" type="warning" bindtap='addCar' />
+  <van-goods-action-button text="立即购买" bindtap='pay' />
+</van-goods-action>

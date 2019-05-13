@@ -1,0 +1,25 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/index/index",
+    "pages/show/show",
+    "pages/pu/pu",
+    "pages/uppu/uppu",
+    "pages/mypu/mypu",
+    "pages/myhealth/myhealth",
+    "pages/help/help",
+    "pages/location/location",
+    "pages/myai/myai",
+    "pages/car/car",
+    "pages/order/order",
+    "pages/assess/assess",
+    "pages/get_user/get_user",
+    "pages/product/product"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "AI PU",
+    "navigationBarTextStyle": "black"
+  }
+}

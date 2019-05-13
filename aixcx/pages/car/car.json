@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "van-card": "../../components/jox-vant/card/index",
+    "van-submit-bar": "../../components/jox-vant/submit-bar/index"
+  }
+}

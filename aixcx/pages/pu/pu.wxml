@@ -1,0 +1,36 @@
+<!--pages/pu/pu.wxml-->
+<view>
+  <image class='pu-img' src='{{menu_info.photo}}' mode="aspectFill"></image>
+  <text class='pu-name'>{{menu_info.title}}</text>
+  <view class='pu-title' data-id='1' bindtap='show'>
+    <view class='pu-title-radius'></view>
+    <text class='pu-title-text'>食材明细</text>
+    <text class='{{show_1?"icon-unfold":"icon-right"}} pu-title-icon'></text>
+  </view>
+  <block wx:if="{{show_1}}">
+    <view class='pu-item-box' wx:for="{{particulars}}" wx:key="index">
+      <text class='pu-item-name'>{{item.name}}</text>
+      <view class='pu-item-list'>
+        <view class='pu-item-list-text' wx:for="{{item.list}}" wx:key="listIndex" wx:for-index="listIndex" wx:for-item="listItem">
+          <text>{{listItem}}</text>
+        </view>
+      </view>
+    </view>
+  </block>
+
+  <view class='pu-title' data-id='2' bindtap='show'>
+    <view class='pu-title-radius'></view>
+    <text class='pu-title-text'>做法步骤</text>
+    <text class='{{show_2?"icon-unfold":"icon-right"}} pu-title-icon'></text>
+  </view>
+  <view class='pu-step-box' wx:if="{{show_2}}"  wx:for="{{menu_step}}" wx:key="index">
+    <view class='pu-step-box-item'>
+      <image class='step-left' src='{{item.image}}' mode='widthFix'></image>
+      <view class='step-right'>
+        <text >{{index+1}}、</text>
+        <text>{{item.content}}</text>
+      </view>
+    </view>
+
+  </view>
+</view>

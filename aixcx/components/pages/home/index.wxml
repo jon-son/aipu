@@ -1,0 +1,44 @@
+<!--components/pages/home/index.wxml-->
+<view class='jox-class'>
+
+  <swiper class='swiper' indicator-dots="{{true}}" indicator-color="rgba(255, 255, 255, 0.3)" indicator-active-color="rgba(0, 0, 0, 0.3)" 
+  autoplay="{{true}}" interval="4000" duration="500">
+    <block wx:for="{{pu_top}}" wx:key="index">
+      <swiper-item data-id="{{item.id}}" bindtap='jump_to'>
+        <image src="{{item.photo}}" class="slide-image" mode="aspectFill"/>
+      </swiper-item>
+    </block>
+  </swiper>
+
+
+  <view class="VerticalBox" style='z-index:1;margin-top: 20rpx'>
+    <scroll-view class="VerticalMain" scroll-y scroll-with-animation style="height:calc(100vh - 500rpx)" scroll-into-view="main-id-{{TabCur}}" >
+    
+      <view class="cu-card case {{isCard?'no-card':''}}"  >
+        <view wx:for="{{pu_list}}" wx:key class="cu-item shadow" data-id="{{item.id}}" bindtap='jump_to'>
+          <view class='image'>
+            <image src="{{item.photo}}"  mode="aspectFill"></image>
+            <view class="cu-tag bg-blue">菜谱</view>
+            <view class='cu-bar bg-shadeBottom'>{{item.title}}</view>
+          </view>
+          
+          <view class="cu-list menu menu-avatar">
+            <view class="cu-item">
+              <view class="cu-avatar round lg" style="background-image:url({{item.avatar}});"></view>
+              <view class='content flex-sub'>
+                <view class='text-grey'>{{item.nickname}}</view>
+                <view class='text-gray text-sm flex justify-between'>
+                  {{item.create_date}}
+                  <view class="text-gray text-sm">
+                    <text class="jox-icon-attentionfill"></text> {{item.watch}}
+                    <!-- <text class="icon-appreciatefill"></text> 20 -->
+                  </view>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+</view>

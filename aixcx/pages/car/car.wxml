@@ -1,0 +1,8 @@
+<!--pages/car/car.wxml-->
+
+
+<view wx:for="{{product_car_list}}" wx:key >
+  <van-card num="{{item.product_num}}" price="{{item.price}}" desc="{{item.msg}}" title="{{item.name}}" thumbMode="aspectFill" thumb="{{ item.image }}" />
+</view>
+
+<van-submit-bar price="{{ num }}" button-text="提交订单" bind:submit="onSubmit" />

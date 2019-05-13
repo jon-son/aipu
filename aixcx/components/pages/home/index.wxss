@@ -1,0 +1,13 @@
+/* components/pages/home/index.wxss */
+
+.slide-image {
+  width: 100%;
+}
+
+.swiper {
+  height: 380rpx;
+}
+.image{
+  height: 300rpx;
+  
+}

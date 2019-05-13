@@ -1,0 +1,16 @@
+<!--pages/assess/assess.wxml-->
+<view class='order-box'>
+  <view class='order-item'  wx:for="{{order_list}}" wx:key>
+    <view class='item-top'>
+      <text>订单详情</text>
+      <van-button size="mini" type="danger" disabled='{{item.order.is_pay==1}}' data-id='{{item.order.id}}' bind:click="pay" round>{{item.order.is_pay==1?'已结算':'结算'}}</van-button>
+    </view>
+    <block wx:for="{{item.products}}" wx:key="proIndex" wx:for-index="proIndex" wx:for-item="proItem">
+      <van-card num="{{proItem.product_num}}" price="{{proItem.price}}" desc="{{proItem.msg}}" title="{{proItem.name}}"  thumbMode="aspectFill" thumb="{{ proItem.image }}" />
+    </block>
+
+    <view class='item-bottom'>
+      <text>共{{item.products.length}}件商品，合计：￥{{item.order.num}}元</text>
+    </view>
+  </view>
+</view>

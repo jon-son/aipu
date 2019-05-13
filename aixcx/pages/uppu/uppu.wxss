@@ -1,0 +1,84 @@
+/* pages/uppu/uppu.wxss */
+.upimg1{
+  height: 420rpx;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #ffffff;
+  margin-bottom: 10rpx;
+}
+.uptext{
+ padding: 20rpx 20rpx;
+
+}
+.img1{
+  height: 300rpx;
+  width: 90%;
+  margin-left: 5%;
+  border-radius: 20rpx;
+  border:1rpx solid #ddd; 
+  background-color: #f1f1f1;
+
+}
+.input-box {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.input{
+  width: 76.5%;
+}
+.info-box {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  padding: 40rpx 20rpx;
+}
+.info-name{
+  margin-left: 10rpx;
+}
+.info-list{
+  padding: 10rpx;
+}
+.info-item{
+  padding: 10rpx;
+  border: 1rpx solid #ddd;
+  color: #999;
+  border-radius: 10rpx;
+  margin-right: 20rpx;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+}
+.close{
+  padding: 5rpx 10rpx;
+}
+.step-box{
+  margin-top: 40rpx;
+}
+.add-step-box{
+  padding: 20rpx;
+  background-color: #fff;
+  margin-top: -10rpx;
+  margin-bottom: 100rpx;
+}
+.add-step{
+  width: 90%;
+  margin-left: 5%;
+  height: 80rpx;
+  border: 1rpx solid #ddd;
+  border-radius: 10rpx;
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+.add-menu{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 1000;
+}

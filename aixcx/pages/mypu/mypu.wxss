@@ -1,0 +1,29 @@
+/* pages/mypu/mypu.wxss */
+
+.pu-box {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.pu-list {
+
+  padding: 25rpx 20rpx;
+
+}
+.pu-item{
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-radius: 10rpx;
+}
+.pu-img {
+  width: 335rpx;
+  height: 200rpx;
+    border-radius: 10rpx 10rpx  0 0;
+}
+
+.pu-name {
+  font-size: 26rpx;
+  padding: 10rpx 20rpx;
+}

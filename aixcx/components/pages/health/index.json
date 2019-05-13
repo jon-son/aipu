@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "van-button": "../../jox-vant/button/index",
+    "van-field": "../../jox-vant/field/index"
+  }
+}
